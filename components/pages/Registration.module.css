@@ -1,0 +1,78 @@
+.signs{
+    width:45%;     
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.titel{   
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 30px;
+    font-weight: bold; 
+    font-size: 3em;
+    color: #0F3341;
+}
+
+.inputbox{
+
+    /*width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;*/
+
+    display: flex;
+    align-items: center;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: grey;
+    top: 5%;
+    margin-bottom: 50px;
+    width: 350px;
+    height: 20px;
+}
+
+.input{
+    height: 50px;
+    width: 350px;
+    padding: 5px;
+    border: 1px grey solid;
+    border-radius: 5px;
+    font-size: 20px;
+}
+
+.button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 25px;
+    height: 50px;
+    width: 350px;
+
+    background-color: #0F3341;
+    color: white;
+    border-radius: 5px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.redirect{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 25px;
+
+    color: #0F3341;
+    font-weight: bolder;
+}
+
+.redirector{
+    margin-left: 5px;
+    text-decoration: underline;
+}

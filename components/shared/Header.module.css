@@ -1,0 +1,192 @@
+.header{
+    width: 100%;
+    height: 60px;
+    background-color: #F4F7E2;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 30px;
+    padding-right: 30px;
+    overflow: hidden;
+}
+
+.logo{
+    position: relative;
+    width: 40px;
+    height: 40px;
+}
+
+.toplogo{
+    display: flex;
+    align-items: center;
+}
+
+.title{
+    margin-left: 10px;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.links{
+    display: flex;
+}
+
+.link{
+    display: flex;
+    align-items: center;
+    margin-left: 60px;
+    cursor: pointer;
+}
+
+.icon{
+    position: relative;
+    width: 20px;
+    height: 20px;
+}
+
+.signlinks{
+    display: flex;
+}
+
+.sign{
+    height: 40px;
+    width: 165px;
+    background-color:
+     rgb(14, 38, 58);
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+.sign:hover{
+    background-color: rgba(14, 38, 58, 0.7);
+}
+
+.link:hover .icontext{
+    text-decoration: underline;
+}
+
+.icontext{
+    margin-left: 5px;
+}
+
+.right_side{
+    display: flex;
+    align-items: center;
+}
+
+.account_svg{
+    position: relative;
+    width: 20px;
+    height: 20px;
+    margin-left: 10px;
+}
+
+.profile{
+    display: flex;
+    align-items: center;
+}
+
+.separator{
+    height: 25px;
+    width: 1px;
+    background-color: #000;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+.signout{
+    cursor: pointer;
+}
+
+.signout:hover{
+    text-decoration: underline;
+}
+
+.active_page{
+    font-weight: bold;
+}
+
+.menuOpen{
+    display: none;
+}
+
+.signout{
+    position: relative;
+    width: 20px;
+    height: 20px;
+}
+
+@media(max-width: 1350px){
+    .header{
+        flex-direction: column;
+        align-items: flex-start;
+        height: 250px;
+        padding-bottom: 10px;
+        padding-top: 10px;
+        padding-left: 20px;
+        transition: all .15s ease-in;
+    }
+
+    .links{
+        display: flex;
+        flex-direction: column;
+        margin-top: 10px;
+    }
+
+    .link{
+        margin-left: 0;
+        margin-top: 7px;
+    }
+
+    .right_side{
+        margin-top: 10px;
+    }
+
+    .sign{
+        margin-left: 0;
+        margin-right: 5px;
+        margin-top: 5px;
+    }
+
+    .opt{
+        position: relative;
+        height: 20px;
+        width: 20px;
+    }
+
+    .menuOpen{
+        position: absolute;
+        right: 20px;
+        top: 20px;
+        display: block;
+    }
+
+    .responsive_header{
+        height: 60px;
+    }
+
+}
+
+@media(max-width: 680px){
+    .signlinks{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .sign{
+        width: 100%;
+    }
+
+    .header{
+        height: 250px;
+    }
+
+    .responsive_header{
+        height: 60px;
+    }
+}
