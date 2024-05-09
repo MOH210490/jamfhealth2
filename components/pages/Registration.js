@@ -46,8 +46,39 @@ function Registration(){
             confirmation: value
         }));
     }
+
+    async function handleSubmit(e){
+        e.preventDefault();
+
+        try{
+            if (state.password !== state.confirmation) {
+                setError("Passwords do not match");
+                return;
+            }
+            const response = await fetch("/api/auth/register", {
+                method: "POST",
+                body: JSON.stringify({
+                    firstname: state.firstName,
+                    lastname: state.lastName, 
+                    email: state.email,
+                    password: state.password,
+                }),
+                headers: {
+                    "Content-Type": "application/json"
+                }
+            });
+            if (response.ok) {
+                router.replace("/");
+            }
+            
+        } catch (err) {
+            console.error(err);
+            return;
+        }
+    }
+
     return(
-        <div className={classes.signs}>
+        <form onSubmit={handleSubmit} className={classes.signs}>
             <div className={classes.titel}>
                 <div>Registrieren</div>
             </div>
@@ -69,14 +100,14 @@ function Registration(){
             </div>
 {/*----------------------Registrierung Button------------------------ */}            
             <div className={classes.button}>
-                <button type='button'>Registrieren</button>
+                <button type='submit'>Registrieren</button>
             </div>
 {/*----------------------Verlinkung zum Login------------------------ */}              
             <div className={classes.redirect}>
                 Haben Sie bereits ein Konto?
                 <Link href='/login'><div className={classes.redirector}>Einloggen</div></Link>
             </div>
-        </div>
+        </form>
     )
 }
 
