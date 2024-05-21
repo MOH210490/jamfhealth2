@@ -1,0 +1,13 @@
+.impressum{
+    width: 100%;
+    background-color: #F4F7E2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    padding-bottom: 20px;
+}
+
+.impressum:hover{
+    text-decoration: underline;
+}

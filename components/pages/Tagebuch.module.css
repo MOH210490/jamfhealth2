@@ -1,0 +1,140 @@
+/* Diary.module.css */
+.container {
+    padding: 20px;
+    font-family: Arial, sans-serif;
+  }
+  
+  .title {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  .table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 40px;
+  }
+  
+  .thead {
+    background-color: #f2f2f2;
+  }
+  
+  .tr {
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .th, .td {
+    text-align: left;
+    padding: 12px;
+    color: #000;
+  }
+  
+  .th {
+    background-color: #F4F7E2;
+    color: #000;
+  }
+  
+  .tbody .tr:hover {
+    background-color: #f1f1f1;
+  }
+  
+  .td {
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .deleteButton {
+    background-color: #8a1313;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+  }
+  
+  .deleteButton:hover {
+    background-color: #ff0000;
+  }
+
+  .selector{
+    width: 350px;
+    height: 70px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.4);
+    border-radius: 1000px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    position: relative;
+  }
+  
+  .option{
+    width: 100%;
+    height: 100%;
+    border-radius: 1000px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+  }
+
+  .active{
+    cursor: default;
+  }
+
+  .div{
+    z-index: -1;
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    background-color: #F4F7E2;
+    border-radius: 1000px;
+    transition: all 10s ease-in;
+    left: 0;
+    top: 0;
+  }
+ 
+
+  .anime{
+    left: 0;
+    top: 0;
+    transition: all .3s ease-in;
+  }
+
+  .sel{
+    left: 175px;
+    top: 0;
+    transition: all .3s ease-in;
+  }
+
+  @media (max-width: 768px) {
+    .table_container {
+      overflow-x: scroll;
+    }
+  
+    .table {
+      width: 100%;
+    }
+  
+    .th, .td {
+      padding: 8px;
+    }
+  
+    .deleteButton {
+      padding: 4px 8px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .title {
+      font-size: 18px;
+      margin-bottom: 15px;
+    }
+  
+    .th, .td {
+      padding: 6px;
+    }
+  
+    .deleteButton {
+      padding: 3px 6px;
+    }
+  }

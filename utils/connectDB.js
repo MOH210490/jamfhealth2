@@ -2,7 +2,7 @@ import React from "react";
 import mongoose from "mongoose";
 
 let isConnected = false;
-export const connectDB = async () => {
+export default async function connectDB(){
     try {
         if(!isConnected){
             await mongoose.connect(process.env.MONGODB_URI, { useNewUrlParser: true, useUnifiedTopology: true });
