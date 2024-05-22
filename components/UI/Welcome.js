@@ -1,9 +1,15 @@
 import { useState } from 'react';
+import Link from 'next/link';
 import classes from './Welcome.module.css';
 
 function Welcome(){
     return(
         <div className={classes.signpage}>
+            <div className={classes.backToHome}>
+                <Link href="/">
+                    Zurück zur Homepage
+                </Link>
+            </div>
             <div className={classes.welcomesign}>
                 <div className={classes.wtext}>
                     Willkommen zu
@@ -15,7 +21,7 @@ function Welcome(){
                     Just Ask Me For Health!
                 </div>
                 <div className={classes.wabv}>
-                    Willst du mehrere Funktionen verwenden? Anmelden
+                    Du willst bessere Funktionen? Anmelden :)
                 </div>
             </div>
         </div>
@@ -23,3 +29,5 @@ function Welcome(){
 }
 
 export default Welcome;
+
+

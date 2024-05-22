@@ -1,22 +1,50 @@
-import classes from "./Homepage.module.css"
+import classes from "./Homepage.module.css";
 import Link from "next/link";
-function Homepage(){
+import Image from "next/image";
+
+function Homepage() {
     return (
         <div className={classes.container}>
-            <div className={classes.content}>
-                <div className={classes.title}>JAMF Health - Dein All-in-One Gesundheitsbegleiter</div>
-                <div className={classes.text}>
-                    <p className={classes.p}>Willkommen bei JAMF Health, deinem zuverlässigen Partner für ganzheitliches Wohlbefinden. Mit unserer fortschrittlichen Plattform hast du alles, was du brauchst, um deine Gesundheit in den Griff zu bekommen und zu halten.
-</p>
-                    <p className={classes.p}>Egal, ob du deine Blutdruckwerte verfolgen oder deinen Blutzuckerspiegel im Auge behalten möchtest, mit JAMF Health hast du die Kontrolle. Unser benutzerfreundliches Interface ermöglicht es dir, deine Daten schnell und einfach einzugeben, während unsere intelligente Analysefunktion dir sofortiges Feedback gibt, um deine Gesundheit zu optimieren.
-</p>
-                    <p className={classes.p}>Mit unserem umfangreichen Tagebuch kannst du nicht nur deine aktuellen Werte speichern, sondern auch Trends erkennen und langfristige Ziele setzen. Verfolge deine Fortschritte im Zeitverlauf und erhalte wertvolle Einblicke, um fundierte Entscheidungen für deine Gesundheit zu treffen.</p>
-                    <p className={classes.p}>JAMF Health ist mehr als nur ein Tracker - es ist eine ganzheitliche Gesundheitsplattform, die dich auf jedem Schritt deiner Reise begleitet. Ob du deine Daten mit deinem Arzt teilen oder einfach nur für dich behalten möchtest, mit JAMF Health bist du in besten Händen.</p>
-                    <p className={classes.p}>Starte noch heute deine Reise zu einem gesünderen Leben mit JAMF Health. Denn deine Gesundheit liegt uns am Herzen.</p>
-                </div>
-                <Link href="/blutdruckmesser"><div className={classes.button}>Entdecke den Blutdruckmesser</div></Link>
-                <Link href="/blutzuckermesser"><div className={classes.button}>Entdecke den Blutzuckermesser</div></Link>
-            </div>
+
+<main className={classes.main}>
+                <section className={classes.banner}>
+                    <h1 className={classes.title}>JAMF Health - Dein All-in-One Gesundheitsbegleiter</h1>
+                    <p className={classes.subtitle}>Starte noch heute deine Reise zu einem gesünderen Leben</p>
+                    <div className={classes.bannerButtons}>
+                        <Link href="/blutdruckmesser"><div className={classes.button}>Entdecke den Blutdruckmesser</div></Link>
+                        <Link href="/blutzuckermesser"><div className={classes.button}>Entdecke den Blutzuckermesser</div></Link>
+                    </div>
+                </section>
+                <section className={classes.features}>
+                    <h2 className={classes.sectionTitle}>Unsere Hauptfunktionen</h2>
+                    <div className={classes.featureList}>
+                        <div className={classes.featureItem}>
+                            <h3 className={classes.featureTitle}>Blutdruckmessung</h3>
+                            <p className={classes.featureText}>Verfolge deine Blutdruckwerte und erhalte sofortiges Feedback.</p>
+                        </div>
+                        <div className={classes.featureItem}>
+                            <h3 className={classes.featureTitle}>Blutzuckermessung</h3>
+                            <p className={classes.featureText}>Behalte deinen Blutzuckerspiegel im Auge und optimiere deine Gesundheit.</p>
+                        </div>
+                        <div className={classes.featureItem}>
+                            <h3 className={classes.featureTitle}>Gesundheitstagebuch</h3>
+                            <p className={classes.featureText}>Speichere deine Werte und erkenne Trends über die Zeit.</p>
+                        </div>
+                    </div>
+                </section>
+                <section className={classes.aboutUs}>
+                    <div className={classes.aboutContainer}>
+                        <h2 className={classes.aboutTitle}>Über Uns</h2>
+                        <div className={classes.aboutText}>
+                            <p>
+                                Wir bei JAMF Health glauben, dass Gesundheit Spaß machen sollte! Unsere Website ist wie ein magischer Begleiter, der dir hilft, deine Gesundheitsziele zu erreichen, ohne den Spaß zu verlieren. Egal, ob du deine Blutdruckwerte im Auge behalten möchtest oder einfach nur neugierig auf deine Gesundheit bist, wir sind hier, um dir zu helfen. Mach dich bereit, die Reise zu einem gesünderen und glücklicheren Leben anzutreten - mit JAMF Health an deiner Seite!
+                            </p>
+                        </div>
+                    </div>
+                </section>
+            </main>
         </div>
-    )
-} export default Homepage;
+    );
+}
+
+export default Homepage;

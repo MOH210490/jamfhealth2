@@ -82,38 +82,38 @@ export default function Blutzuckermesser() {
           // nüchtern
           if(einheit == "mg/dl"){
             if(wert < 100){
-              setErgebnis("Normal, gesunder Wert.")
+              setErgebnis("Ihr Blutzuckerwert ist perfekt. Keine Sorgen machen :) ")
             } else if(wert >= 100 && wert <= 126){
-              setErgebnis("Ihr Blutzuckerwert ist erhöht. Bitte verzichten Sie auf zuckerhaltige Nahrungsmittel und überwachen Sie Ihren Blutzucker regelmäßig.")
+              setErgebnis("Ihr Blutzuckerwert ist erhöht. Bitte verzichten Sie auf zuckerhaltige Lebensmittel und überwachen Sie Ihren Blutzuckerspiegel regelmäßig. :/")
             } else {
-              setErgebnis("Ihr Blutzuckerwert ist extrem hoch. Bitte konsultieren Sie sofort einen Arzt, um mögliche Gesundheitsrisiken zu vermeiden.")
+              setErgebnis("Ihr Blutzuckerwert ist extrem hoch. Bitte konsultieren Sie sofort einen Arzt, um mögliche Gesundheitsrisiken zu vermeiden und vergessen Sie nicht auf die Insulinzufuhr. :(")
             }
           } else {
             if(wert < 5.6){
-              setErgebnis("Normal, gesunder Wert.")
+              setErgebnis("Dein Blutzuckerwert ist perfekt. Keine Sorgen machen :)")
             } else if(wert >= 5.6 && wert <= 7.0){
-              setErgebnis("Ihr Blutzuckerwert ist erhöht. Bitte verzichten Sie auf zuckerhaltige Nahrungsmittel und überwachen Sie Ihren Blutzucker regelmäßig.")
+              setErgebnis("Ihr Blutzuckerwert ist erhöht. Bitte verzichten Sie auf zuckerhaltige Lebensmittel und überwachen Sie Ihren Blutzuckerspiegel regelmäßig. :/")
             } else {
-              setErgebnis("Ihr Blutzuckerwert ist extrem hoch. Bitte konsultieren Sie sofort einen Arzt, um mögliche Gesundheitsrisiken zu vermeiden.")
+              setErgebnis("Ihr Blutzuckerwert ist extrem hoch. Bitte konsultieren Sie sofort einen Arzt, um mögliche Gesundheitsrisiken zu vermeiden und vergessen Sie nicht auf die Insulinzufuhr. :(")
             }
           }
         } else {
           // nicht nüchtern
           if(einheit == "mg/dl"){
             if(wert < 140){
-              setErgebnis("Ihr Blutzuckerwert ist normal und gesund.")
+              setErgebnis("Dein Blutzuckerwert ist perfekt. Keine Sorgen machen :)")
             } else if(wert >= 140 && wert <= 200){
-              setErgebnis("Ihr Blutzuckerwert ist erhöht. Bitte verzichten Sie auf zuckerhaltige Nahrungsmittel und überwachen Sie Ihren Blutzucker regelmäßig.")
+              setErgebnis("Ihr Blutzuckerwert ist erhöht. Bitte verzichten Sie auf zuckerhaltige Lebensmittel und überwachen Sie Ihren Blutzuckerspiegel regelmäßig. :/")
             } else {
-              setErgebnis("Ihr Blutzuckerwert ist extrem hoch. Bitte konsultieren Sie sofort einen Arzt, um mögliche Gesundheitsrisiken zu vermeiden.")
+              setErgebnis("Ihr Blutzuckerwert ist extrem hoch. Bitte konsultieren Sie sofort einen Arzt, um mögliche Gesundheitsrisiken zu vermeiden und vergessen Sie nicht auf die Insulinzufuhr. :(")
             }
           } else {
             if(wert < 7.8){
-              setErgebnis("Ihr Blutzuckerwert ist normal und gesund.")
+              setErgebnis("Dein Blutzuckerwert ist perfekt. Keine Sorgen machen :)")
             } else if(wert >= 7.8 && wert <= 11.1){
-              setErgebnis("Ihr Blutzuckerwert ist erhöht. Bitte verzichten Sie auf zuckerhaltige Nahrungsmittel und überwachen Sie Ihren Blutzucker regelmäßig.")
+              setErgebnis("Ihr Blutzuckerwert ist erhöht. Bitte verzichten Sie auf zuckerhaltige Lebensmittel und überwachen Sie Ihren Blutzuckerspiegel regelmäßig. :/")
             } else {
-              setErgebnis("Ihr Blutzuckerwert ist extrem hoch. Bitte konsultieren Sie sofort einen Arzt, um mögliche Gesundheitsrisiken zu vermeiden.")
+              setErgebnis("Ihr Blutzuckerwert ist extrem hoch. Bitte konsultieren Sie sofort einen Arzt, um mögliche Gesundheitsrisiken zu vermeiden und vergessen Sie nicht auf die Insulinzufuhr. :(")
             }
           }
         }
@@ -123,37 +123,37 @@ export default function Blutzuckermesser() {
           // nüchtern
           if(einheit == "mg/dl"){
             if(wert < 65){
-              setErgebnis("Ihr Blutzuckerwert ist normal und gesund.")
+              setErgebnis("Dein Blutzuckerwert ist perfekt. Keine Sorgen machen :)")
             } else if(wert >= 65 && wert <= 100){
-              setErgebnis("Ihr Blutzuckerwert ist erhöht. Bitte verzichten Sie auf zuckerhaltige Nahrungsmittel und überwachen Sie Ihren Blutzucker regelmäßig.")
+              setErgebnis("Ihr Blutzuckerwert ist erhöht. Bitte verzichten Sie auf zuckerhaltige Lebensmittel und überwachen Sie Ihren Blutzuckerspiegel regelmäßig. :/")
             } else {
-              setErgebnis("Ihr Blutzuckerwert ist extrem hoch. Bitte konsultieren Sie sofort einen Arzt, um mögliche Gesundheitsrisiken zu vermeiden.")
+              setErgebnis("Ihr Blutzuckerwert ist extrem hoch. Bitte konsultieren Sie sofort einen Arzt, um mögliche Gesundheitsrisiken zu vermeiden und vergessen Sie nicht auf die Insulinzufuhr. :(")
             }
           } else {
             if(wert < 3.6){
-              setErgebnis("Ihr Blutzuckerwert ist normal und gesund.")
+              setErgebnis("Dein Blutzuckerwert ist perfekt. Keine Sorgen machen :)")
             } else if(wert >= 3.6 && wert <= 5.6){
-              setErgebnis("Ihr Blutzuckerwert ist erhöht. Bitte verzichten Sie auf zuckerhaltige Nahrungsmittel und überwachen Sie Ihren Blutzucker regelmäßig.")
+              setErgebnis("Ihr Blutzuckerwert ist erhöht. Bitte verzichten Sie auf zuckerhaltige Lebensmittel und überwachen Sie Ihren Blutzuckerspiegel regelmäßig. :/")
             } else {
-              setErgebnis("Ihr Blutzuckerwert ist extrem hoch. Bitte konsultieren Sie sofort einen Arzt, um mögliche Gesundheitsrisiken zu vermeiden.")
+              setErgebnis("Ihr Blutzuckerwert ist extrem hoch. Bitte konsultieren Sie sofort einen Arzt, um mögliche Gesundheitsrisiken zu vermeiden und vergessen Sie nicht auf die Insulinzufuhr. :(")
             }
           }
         } else {
           if(einheit == "mg/dl"){
             if(wert < 80){
-              setErgebnis("Ihr Blutzuckerwert ist normal und gesund.")
+              setErgebnis("Dein Blutzuckerwert ist perfekt. Keine Sorgen machen :)")
             } else if(wert >= 80 && wert <= 126){
-              setErgebnis("Ihr Blutzuckerwert ist erhöht. Bitte verzichten Sie auf zuckerhaltige Nahrungsmittel und überwachen Sie Ihren Blutzucker regelmäßig.")
+              setErgebnis("Ihr Blutzuckerwert ist erhöht. Bitte verzichten Sie auf zuckerhaltige Lebensmittel und überwachen Sie Ihren Blutzuckerspiegel regelmäßig. :/")
             } else {
-              setErgebnis("Ihr Blutzuckerwert ist extrem hoch. Bitte konsultieren Sie sofort einen Arzt, um mögliche Gesundheitsrisiken zu vermeiden.")
+              setErgebnis("Ihr Blutzuckerwert ist extrem hoch. Bitte konsultieren Sie sofort einen Arzt, um mögliche Gesundheitsrisiken zu vermeiden und vergessen Sie nicht auf die Insulinzufuhr. :(")
             }
           } else {
             if(wert < 4.5){
-              setErgebnis("Ihr Blutzuckerwert ist normal und gesund.")
+              setErgebnis("Dein Blutzuckerwert ist perfekt. Keine Sorgen machen :)")
             } else if(wert >= 4.5 && wert <= 7.0){
-              setErgebnis("Ihr Blutzuckerwert ist erhöht. Bitte verzichten Sie auf zuckerhaltige Nahrungsmittel und überwachen Sie Ihren Blutzucker regelmäßig.")
+              setErgebnis("Ihr Blutzuckerwert ist erhöht. Bitte verzichten Sie auf zuckerhaltige Lebensmittel und überwachen Sie Ihren Blutzuckerspiegel regelmäßig. :/")
             } else {
-              setErgebnis("Ihr Blutzuckerwert ist extrem hoch. Bitte konsultieren Sie sofort einen Arzt, um mögliche Gesundheitsrisiken zu vermeiden.")
+              setErgebnis("Ihr Blutzuckerwert ist extrem hoch. Bitte konsultieren Sie sofort einen Arzt, um mögliche Gesundheitsrisiken zu vermeiden und vergessen Sie nicht auf die Insulinzufuhr. :(")
             }
           }
         }

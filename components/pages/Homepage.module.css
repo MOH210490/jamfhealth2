@@ -1,38 +1,143 @@
-.container{
-    background-color: #F4F7E2;
-    width: 100%;
-    height: 95vh;
+.container {
+    font-family: 'Arial', sans-serif;
+    color: #333;
+    background-color: #ffffff;
+    min-height: 100vh;
     display: flex;
+    flex-direction: column;
     align-items: center;
-    justify-content: center;
 }
 
-.content{
-    width: 70vw;
-    background-color: #fff;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.4);
-    padding: 30px;
-}
 
-.title{
-    font-size: 40px;
+.logo {
+    font-size: 1.5rem;
     font-weight: bold;
 }
 
-.p{
-    margin-top: 20px;
+.nav {
+    display: flex;
+    gap: 20px;
 }
 
-.button{
-    width: 300px;
-    height: 50px;
-    font-size: 18px;
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-    padding-left: 20px;
-    padding-right: 20px;
-    background-color: #0F3341;
-    color: #fff;
-    margin-top: 20px;
+.navLink {
+    color: #a7ca93;
+    text-decoration: none;
+    font-weight: bold;
 }
+
+.navLink:hover {
+    text-decoration: underline;
+}
+
+.main {
+    width: 100%;
+    max-width: 1200px;
+    padding: 20px;
+    text-align: center;
+}
+
+.banner {
+    background-color: #d0e2c5;
+    padding: 50px 20px;
+    margin-bottom: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    color: #000000;
+}
+
+.title {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+.subtitle {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+.bannerButtons {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+
+.features {
+    margin-bottom: 40px;
+}
+
+.sectionTitle {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.featureList {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+
+.featureItem {
+    background-color: #d0e2c5;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 30%;
+    color: #000000;
+}
+
+.featureTitle {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.featureText {
+    font-size: 1rem;
+}
+
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #7fbc82;
+    color: #F4F7E2;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.button:hover {
+    background-color: #d0e2c5;
+}
+
+.footer {
+    width: 100%;
+    background-color: #d0e2c5;
+    color: #000000;
+    text-align: center;
+    padding: 20px;
+    position: absolute;
+    bottom: 0;
+    
+}
+
+.footerText {
+    margin: 0;
+}
+.aboutContainer {
+    background-color: #f4f6ec;
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 30px;
+}
+
+.aboutTitle {
+    font-size: 24px;
+    font-weight: bold;
+    color: #0F3341;
+}
+
+.aboutText p {
+    font-size: 18px;
+    color: #0F3341;
+}
+

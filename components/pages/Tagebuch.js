@@ -19,7 +19,7 @@ export default function Diary() {
         setBloodPressureRecords(res.data.bloodPressureRecords);
         setLoading(false);
       } catch (error) {
-        console.error('Error fetching data', error);
+        console.error('Ein Fehler ist aufgetreten ;(', error);
       }
     }
 
@@ -31,7 +31,7 @@ export default function Diary() {
       await axios.delete(`/api/blood-sugar/${id}`);
       setBloodSugarRecords(bloodSugarRecords.filter(record => record._id !== id));
     } catch (error) {
-      console.error('Error deleting record', error);
+      console.error('Fehler beim Löschen ;(', error);
     }
   };
 
@@ -40,12 +40,12 @@ export default function Diary() {
       await axios.delete(`/api/blood-pressure/${id}`);
       setBloodPressureRecords(bloodPressureRecords.filter(record => record._id !== id));
     } catch (error) {
-      console.error('Error deleting record', error);
+      console.error('Fehler beim Löschen ;(', error);
     }
   };
 
   if (!session) {
-    return <div className={classes.container}>Bitte anmelden</div>;
+    return <div className={classes.container}>Für diese Funktion brauchen Sie ein Konto ;) Melden Sie sich kostenlos an!!</div>;
   }
 
   if (loading) {
